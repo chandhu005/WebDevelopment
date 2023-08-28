@@ -1,0 +1,110 @@
+ /* to understand the box model we need to check the code for rainbow*/
+ body{
+    background-color: black;
+    display:flex;
+    justify-content:center;
+    align-content: center;
+}
+#inner{
+    box-sizing: border-box;
+    background-color: #800080;
+    height:100px;
+    width:100px;
+    border:25px solid #0000ff;
+    margin:25px;
+    border-radius:50%;
+}
+#middle{
+    box-sizing:border-box;
+    background-color:#008000;
+    height:200px;
+    width:200px;
+    margin:25px;
+    border: 25px solid #ffff00;
+    border-radius:50%;
+}
+#outer{
+    box-sizing:border-box;
+    background-color:#ffa500;
+    height:300px;
+    width:300px;
+    margin:25px;
+    border: 25px solid #ff0000;
+    border-radius:50%;
+}
+/*
+*********** using padding and border ********************
+#outer,#inner,#middle {
+    background-color: black;
+    border-radius:50%
+  }
+  /
+  #outer{
+    background-color:#ffa500;
+    width:200px;
+    height:200px;
+    padding:25px;
+    border:25px solid #ff0000;
+  }
+
+  hight:100px;
+  padding:2*25=50px;
+  border=2*25=50px;
+  total=200px;
+
+  #middle{
+    background-color:#008000;
+    height:100px;
+    width:100px;
+    padding:25px;
+    border:25px solid #ffff00;
+  
+  }
+  purple=50px
+  
+  border=25*2 =50 px
+  total yellow=100px
+  #inner{
+    background-color:#800080;
+    height:50px;
+    width:50px;
+    border:25px solid #0000ff;
+    
+  }
+  ---------------------------------------------------------------------
+  -----------------------------------------------------------------------*/
+  
+  /*
+  *******Using Flex**********
+
+#inner,#middle,#outer {
+    background-color: black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+  }
+  purple=50px
+  
+  border=25*2 =50 px
+  total yellow=100px
+  #inner{
+    background-color:#800080;
+    height:50px;
+    width:50px;
+    border:25px solid #0000ff;
+  }
+  #middle{
+    background-color:#008000;
+    height:150px;
+    width:150px;
+    border:25px solid #ffff00;
+  }
+  #outer{
+    background-color:#ffa500;
+    height:250px;
+    width:250px;
+    border:25px solid #ff0000
+  }
+  
+  */
